@@ -1,0 +1,385 @@
+:root {
+    --purple: rgb(180, 0, 180);
+    --gray: rgb(129, 129, 129);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.nav {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(250, 250, 250);
+}
+
+.nav-flex {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav-flex img {
+    padding: 0 15px;
+}
+
+.nav-flex ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-flex a {
+    text-decoration: none;
+    color: var(--gray);
+    padding: 0 15px;
+    transition: 0.5s;
+}
+
+.nav-flex a:hover {
+    color: var(--purple);
+}
+
+#moon {
+    padding: 0 10px;
+}
+
+#search {
+    padding: 0 10px;
+}
+
+#wallet {
+    order: 7;
+    margin-left: auto;
+    color: white;
+    font-weight: 400;
+    background-color: black;
+    padding: 10px 30px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#wallet:hover {
+    color: white;
+    background-color: var(--purple);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logo {
+    border-right: 1.5px solid rgba(177, 177, 177, 0.575);
+    padding-right: 30px;
+    margin-right: 15px;
+}
+
+.header-images-parent-3 {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.header-images-parent-2 {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-images-parent-1 {
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-images-child-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.header-images-child-1 h2 {
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.header-images-child-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    box-sizing: border-box;
+    padding: 1%;
+}
+
+#nft {
+    margin: 40px 0;
+    width: 400px;
+    height: auto;
+}
+
+#photographer {
+    color: var(--gray);
+    margin: 40px 0px;
+}
+
+#header-images-buttons p {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#header-images-buttons p:hover {
+    background-color: var(--purple);
+    cursor: pointer;
+}
+
+.minted {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.minted h4 {
+    margin-right: 10px;
+    color: rgb(150, 115, 0);
+}
+
+.minted p {
+    font-weight: 200;
+}
+
+#camera {
+    margin-left: 10px;
+}
+
+#popper {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.confetti {
+    display: flex;
+    align-items: center;
+    height: 10%;
+}
+
+.confetti h3 {
+    font-size: 30px;
+}
+
+#info {
+    order: 3;
+    width: 25px;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.grid-1 {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    height: 100%;
+    gap:2%;
+    padding: 0%;
+    position: relative;
+}
+
+.grid-1 > div {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0px rgba(77, 77, 77, 0.5);
+    padding: 16px;
+}
+
+.grid-1 .image-container {
+    position: relative;
+}
+
+.grid-1 .back-image {
+    object-fit: cover;
+    width: 100%;
+    height: 93%;
+    border-radius: 3px;
+}
+
+.grid-1 .front-image {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius:  50px;
+    backdrop-filter: blur(15px);
+    background-color:rgba(0, 0, 0, 0.13);
+    transition: 0.5s;
+}
+
+.grid-1 .front-image:hover {
+    background-color: rgba(0, 0, 0, 0.534);
+    cursor: pointer;
+}
+
+.grid-1 .front-image > p {
+    color: white;
+    padding: 8px;
+    font-size: 13px;
+}
+
+.grid-1 .avatar {
+    width: 27px;
+    height: 27px;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin: 5px;
+}
+
+.grid-1 > div > h3 {
+    font-weight: 400;
+    font-size: 15px;
+    padding: 4px 0;
+}
+
+
+/* Page 1 */
+.page-1 {
+    border-top: 1.8px solid rgb(177, 177, 177, 0.5);
+    width: 100%;
+    height: 100vh;
+}
+
+.page-1 .part-1 {
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+}
+
+.page-1 .part-1 h3 {
+    font-weight: 700;
+    margin-top: auto;
+    font-size: 2.5em;
+    
+}
+
+#hammer {
+    margin-top: auto;
+    width: 60px;
+    height: 60px;
+}
+
+.page-1 .part-1 p {
+    color: red;
+    font-size: 15px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-top: auto;
+}
+
+.page-1 .part-1 div {
+    flex-grow: 1;
+}
+
+.page-1 .part-2 {
+    height: 85vh;
+    width: 80%;
+    margin: auto;
+}
+
+@media (max-width: 1400px) {
+    .page-1 {
+        border-top: none;
+    }    
+    .page-1 {
+        height: 20svh;
+    }
+    .nav {
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(250, 250, 250);
+    }
+    .nav-flex {
+        width: 100%;
+    }
+    .nav-flex ul{
+        display: none;
+    }
+    #moon {
+        display: none;
+    }
+    #wallet {
+        display: none;
+    }
+    #logo {
+        border-right: none;
+    }
+    #search {
+        display: none;
+    }
+    #nft {
+        margin: 0 0 20px 0;
+    }
+    .confetti h3 {
+        font-size: 20px;
+    }
+
+    .header {
+        width: 100%;
+        height: 150vh;
+    }
+    .header-images-parent-3 {
+        width: 100%;
+        height: 140vh;
+    }
+    .header-images-parent-2 {
+        width: 90%;
+    }
+    .header-images-parent-1 {
+        height: 95%;
+    }
+    
+    .header-images-parent-1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .grid-1 {
+        grid-template-columns: 45% 10% 45%;
+    }
+    .grid-1 .back-image {
+        height: 180px;
+    }
+    .grid-1 .front-image> p {
+        padding: 3px;
+        font-size: 12px;
+    }
+}
